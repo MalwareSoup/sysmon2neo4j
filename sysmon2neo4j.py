@@ -3,7 +3,7 @@ import json
 import sys
 
 # Establish database session
-driver = GraphDatabase.driver("bolt://localhost:7687", auth=basic_auth("<username>", "<password>"))
+driver = GraphDatabase.driver("bolt://localhost:7687", auth=basic_auth("neo4j", "test"))
 session = driver.session()
 
 def handle_event(data):
